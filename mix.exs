@@ -42,8 +42,8 @@ defmodule NervesSkeletonSystemRpi3.MixProject do
     [
       type: :system,
       artifact_sites: [
-        {:prefix, Path.join([File.cwd!(), "..", "artifacts"])},
-        {:github_releases, "#{@github_organization}/#{@app}"}
+        {:github_releases, "#{@github_organization}/#{@app}"},
+        {:prefix, Path.join([File.cwd!(), "..", "artifacts"])}
       ],
       build_runner_opts: build_runner_opts(),
       platform: Nerves.System.BR,
